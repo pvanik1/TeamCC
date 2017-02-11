@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+{% load staticfiles %}
+<html>
+    <head>
+        <title>
+            My Maintanence - 
+            {% block title_block %} 
+                Report any maintanence issues on Campus!
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <div>
+            {% block body_block %}
+            <h1>
+            	Report issues at the University of Glasgow!
+            </h1>
+            {% endblock %}
+        </div>
+    </body>
+</html>
