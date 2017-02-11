@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'fixit',
+    'pwa',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# PWA config
+PWA_APP_NAME = 'FixIt'
+PWA_APP_DESCRIPTION = 'Report faults to janitors and staff'
+PWA_APP_THEME_COLOR = '#003865'
+PWA_APP_ICONS = [
+    {
+        'src': '/static/images/add_me_here.png',
+        'sizes': '160x160'
+    }
+]
