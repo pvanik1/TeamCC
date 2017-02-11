@@ -136,7 +136,7 @@ PWA_APP_DESCRIPTION = 'Report faults to janitors and staff'
 PWA_APP_THEME_COLOR = '#003865'
 PWA_APP_ICONS = [
     {
-        'src': '/static/images/add_me_here.png',
+        'src': '/static/images/upspanner.png',
         'sizes': '160x160'
     }
 ]
