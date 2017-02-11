@@ -1,0 +1,22 @@
+body {
+	background-color: rgba(0, 56, 101, 0.5);
+	font-family: "Swiss 721 BT", Helvetica, sans-serif;
+	font-size: 13px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+h1 {
+	font-family: "Swiss 721 BT", Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+* {
+	font-family: "Swiss 721 BT", Helvetica, sans-serif;
+	font-size: 13px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+
