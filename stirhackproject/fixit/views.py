@@ -106,12 +106,12 @@ def about(request):
 def addIssue(request):
     
     if request.method == 'POST':
-        issue_form = IssueForm(data=request.POST)
+        issue_form = IssueForm(request.POST, request.FILES)
         if issue_form.is_valid():
-            issue = user_form.save()
-            issue.save(commit = false)
+            issue = issue_form.save(commit=False)
+            issue.save()
         else:
-            print(user_form.errors)
+            print(issue_form.errors)
 
     issue_form = IssueForm()
 
