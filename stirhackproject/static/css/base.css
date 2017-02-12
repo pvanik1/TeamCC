@@ -1,7 +1,7 @@
 /*Default font*/
 body {
 	background-color: rgba(0, 56, 101, 0.5);
-	font-size: 13px;
+	font-size: 14px;
 	font-family: "Swiss 721 BT", Helvetica, sans-serif;
 }
 
@@ -30,6 +30,7 @@ nav {
 a {
 	font-size: 13px;
 	font-family: "Swiss 721 BT", Helvetica, sans-serif;
+	text-align: center;
 }
 
 a:hover {
@@ -72,4 +73,25 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+}
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }

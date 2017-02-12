@@ -9,10 +9,11 @@
 	<a href="{% url 'addIssue' %}">Report an issue</a><br/>
 	{% if issues %}
 		{% for issue in issues %}
-		<h1>{{ issue.title }}</h1>
+		<div class="img">
 		<img src="/media/{{ issue.images }}" alt="Something" />
-		<div>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
+		<div>{{ issue.title }}</br>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
 		<div>Upspanners: {{ issue.upvotes }}</div>
+		</div>
 		{% endfor %}
 	{% else %}
 		There are no issues.
