@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{% extends 'fixit/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Issues
+{% endblock %}
+
+{% block body_block %}
+	{% if issue %}
+		<h1>{{ issue.title}}</h1>
+
+		<div>{{ issue.image }}</div>
+		<div>{{ issue.location_bgd}} - {{ issue.location_detail }}</div>
+		<div>Upspanners: {{ issue.upovotes }}</div>
+		
+	{% else %}
+		There are no issues.
+	{% endif %}
+{% endblock %}
