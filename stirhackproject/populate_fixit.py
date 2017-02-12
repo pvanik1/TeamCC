@@ -15,28 +15,28 @@ def populate():
          "location_bdg": "N/A",
          "location_detail": "Outside main gate",
          "upvotes": "3",
-         "images": "Pothole.jpg",
+         "images": "issue_images/Pothole.jpg",
             },
 
         {"title": "Slow PC",
          "location_bdg": "Boyd Orr",
          "location_detail": "Lvl 10, machine 5",
          "upvotes": "24",
-         "images": "Pothole.jpg",
+         "images": "issue_images/Pothole.jpg",
             },
 
         {"title": "Broken door handle",
          "location_bdg": "Library",
          "location_detail": "Level 8 annex",
          "upvotes": "1",
-         "images": "Pothole.jpg",
+         "images": "issue_images/Pothole.jpg",
             },
 
         {"title": "Heating not working",
          "location_bdg": "Adam Smith 1115",
          "location_detail": "top row",
          "upvotes": "9",
-         "images": "Pothole.jpg",
+         "images": "issue_images/Pothole.jpg",
             },]
 
     for issue in issues:

@@ -10,7 +10,7 @@
 	{% if issues %}
 		{% for issue in issues %}
 		<h1>{{ issue.title }}</h1>
-		<img src="{{ issue.image }}" />
+		<img src="media/{{ issue.images }}" alt="Something" />
 		<div>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
 		<div>Upspanners: {{ issue.upvotes }}</div>
 		{% endfor %}
