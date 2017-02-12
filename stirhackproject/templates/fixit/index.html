@@ -17,11 +17,14 @@
 	<a href="{% url 'addIssue' %}">Report an issue</a><br/>
 	{% if issues %}
 		{% for issue in issues %}
+	
 		<div class="img">
-		<img src="/media/{{ issue.images }}" alt="Something" />
-		<div>{{ issue.title }}</br>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
-		<div>Upspanners: {{ issue.upvotes }}</div>
+			<img src="/media/{{ issue.images }}" alt="Something" />
+			<div>{{ issue.title }}</br>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
+			<div>Upspanners: {{ issue.upvotes }}</div>
 		</div>
+		<br clear='left'>
+	
 		{% endfor %}
 	{% else %}
 		There are no issues.
