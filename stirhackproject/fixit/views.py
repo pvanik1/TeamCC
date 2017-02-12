@@ -104,7 +104,18 @@ def about(request):
 	return render(request, 'fixit/about.html')
 
 def addIssue(request):
-    return render(request, 'fixit/addIssue.html')
+    
+    if request.method == 'POST':
+        issue_form = IssueForm(data=request.POST)
+        if issue_form.is_valid():
+            issue = user_form.save()
+            issue.save(commit = false)
+        else:
+            print(user_form.errors)
+
+    issue_form = IssueForm()
+
+    return render(request, 'fixit/addIssue.html', {'issue_form':issue_form})
 
 
 

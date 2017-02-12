@@ -8,8 +8,11 @@
 {% block body_block %}
      <h1>Report an Issue</h1>
         <div>
-            <form id="issue_form" method="post" action="/fixit/addIssue/">
+            <form id="issue_form" method="post" action="addIssue">
                 {% csrf_token %}
+
+                {{ issue_form.as_p}}
+
                 {% for hidden in form.hidden_fields %}
                     {{ hidden }}
                 {% endfor %}
