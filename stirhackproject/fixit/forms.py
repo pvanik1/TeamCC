@@ -7,7 +7,6 @@ class UserForm(forms.ModelForm):
 	class Meta:
 		model = User
 		fields = ('username', 'email', 'password')
-
 		
 class IssueForm(forms.ModelForm):
 	issueID = forms.IntegerField(widget = forms.HiddenInput(), initial = 0)

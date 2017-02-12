@@ -52,7 +52,7 @@ def login(request):
 		else:
 			user_form = UserForm()
 			return render(request, 'fixit/login.html', 
-					{'user_form': user_form, 
+					{'login_form': user_form, 
 					'registered': registered})
 
 def user_logout(request):
