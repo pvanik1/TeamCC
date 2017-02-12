@@ -60,7 +60,7 @@ def user_logout(request):
 	return HttpResponseRedirect(reverse('login'))
 
 def index(request):
-	return render(request, 'index.html')
+	return render(request, 'fixit/index.html')
 
 def about(request):
 	return render(request, 'fixit/about.html')
