@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+
+from fixit.models import Issue
 from fixit.forms import UserForm, IssueForm
 
 from django.contrib.auth import authenticate, login
@@ -94,13 +96,13 @@ def user_logout(request):
 	return HttpResponseRedirect(reverse('login'))
 
 def index(request):
-	return render(request, 'fixit/index.html')
+    issue_list = Issue.objects.order_by('-upvotes')
+    context_dict = {'issues': issue_list}
+    return render(request, 'fixit/index.html', context=context_dict)
 
 def about(request):
 	return render(request, 'fixit/about.html')
 
-def issue(request):
-	return render(request, 'fixit/issue.html')
 
 
 
