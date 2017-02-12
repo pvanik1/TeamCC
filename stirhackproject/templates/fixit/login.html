@@ -1,0 +1,41 @@
+{% extends 'fixit/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	FixIt - Report repair issues in Uni
+{% endblock %}
+
+{% block body_block %}
+
+<h1>FixIt</h1>
+<div>
+Welcome to FixIt!
+</div>
+
+<div>
+	<strong>Login</strong><br/>
+	<form id="login_form" method="post" action="{% url 'login' %}">
+		{% csrf_token %}
+		Username: <input type="text" name="username" value="" size="50" />
+		<br/>
+		Password: <input type="password" name="password" value="" size="50" />
+		<br/>
+		<input type="submit" value="Login" />
+	</form>
+</div>
+
+<div>
+	<strong>Register</strong><br/>
+	<form id="registration_form" method="post" action="{% url 'login' %}">
+		{% csrf_token %}
+		Username: <input type="text" name="username" value="" size="50" />
+		<br/>
+		Password: <input type="password" name="password" value="" size="50" />
+		<br/>
+		Student email address: <input type="email" name="email" value="" size="50" />
+		<br/>
+		<input type="submit" value="Register" />
+	</form>
+</div>
+
+{% endblock %}

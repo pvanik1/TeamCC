@@ -10,9 +10,12 @@ class Issue(models.Model):
 	location_bdg = models.CharField(max_length=128)
 	location_detail = models.CharField(max_length=255)
 	upvotes = models.IntegerField(default=0)
-	images = models.ImageField(upload_to='issue_images', blank=True)
+	images = models.ImageField(upload_to='issue_images')
         # ADD TAGS
         	
+	def __str__(self):
+		return self.id
+
 	def __unicode__(self):
 		return self.id
 
