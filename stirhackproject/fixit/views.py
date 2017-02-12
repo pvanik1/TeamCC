@@ -106,7 +106,7 @@ def about(request):
 def addIssue(request):
     
     if request.method == 'POST':
-        issue_form = IssueForm(data=request.POST)
+        issue_form = IssueForm(request.POST, request.FILES)
         if issue_form.is_valid():
             issue = issue_form.save(commit=False)
             issue.save()
