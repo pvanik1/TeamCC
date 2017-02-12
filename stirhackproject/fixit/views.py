@@ -63,4 +63,7 @@ def index(request):
 	return render(request, 'index.html')
 
 def about(request):
-	return redner(request, 'about.html')
+	return render(request, 'fixit/about.html')
+
+
+
