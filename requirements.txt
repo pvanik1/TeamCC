@@ -1,2 +1,4 @@
 Django==1.10.3
 django-progressive-web-app
+libjpeg
+Pillow==4.0.0
