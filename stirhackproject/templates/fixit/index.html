@@ -1,0 +1,19 @@
+{% extends 'fixit/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	FixIt - Report repair issues in Uni!
+{% endblock %} 
+
+{% block body_block %}
+	
+	{% if Issues %}
+		<h1>{{ Issues.title }}</h1>
+		<div>{{ issues.image }}</div>
+		<div>{{ issues.location_bgd }} - {{ issues.location_detail }}</div>
+		<div>Upspanners: {{ issues.upovotes }}</div>
+		
+	{% else %}
+		There are no issues.
+	{% endif %}
+{% endblock %}
