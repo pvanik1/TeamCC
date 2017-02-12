@@ -7,12 +7,13 @@
 
 {% block body_block %}
 	
-	{% if Issues %}
+	{% if issues %}
+		{% for issue in issues %}
 		<h1>{{ Issues.title }}</h1>
-		<div>{{ issues.image }}</div>
+		<img src="{{ MEDIA_URL }}issue_images/{{ issues.image }}" />
 		<div>{{ issues.location_bgd }} - {{ issues.location_detail }}</div>
 		<div>Upspanners: {{ issues.upovotes }}</div>
-		
+		{% endfor %}
 	{% else %}
 		There are no issues.
 	{% endif %}
