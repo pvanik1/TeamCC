@@ -6,6 +6,14 @@
 {% endblock %} 
 
 {% block body_block %}
+	
+		<h1>
+        	Report Issues at the University of Glasgow<br />
+			<img src="{% static "images/upspanner.png" %}" alt="Upvotes!" />
+        </h1>
+	<h2>
+		Previously Reported
+	</h2>
 	<a href="{% url 'addIssue' %}">Report an issue</a><br/>
 	{% if issues %}
 		{% for issue in issues %}

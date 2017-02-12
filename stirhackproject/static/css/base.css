@@ -16,7 +16,7 @@ h1 {
 h2 {
 	font-family: "Swiss 721 BT", Helvetica, sans-serif;
 	font-size: 20px;
-	text-align: center;
+	text-align: left;
 }
 
 nav {
@@ -94,4 +94,8 @@ div.img img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+img {
+	padding-top: 20px;
 }
