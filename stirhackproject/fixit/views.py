@@ -87,7 +87,7 @@ def user_login(request):
     else:
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
-        return render(request, 'rango/login.html', {})
+        return render(request, 'fixit/login.html', {})
 
 def user_logout(request):
 	logout(request)
