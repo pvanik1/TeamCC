@@ -20,9 +20,10 @@ from django.conf.urls.static import static
 from fixit import views
 
 urlpatterns = [
-    url(r'^$', views.login, name='login'),
+    url(r'^$', views.user_login, name='login'),
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.index, name='index'),
     url(r'^about/', views.about, name='about'),
+    url(r'^register/', views.register, name='register'),
     url('', include('pwa.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
