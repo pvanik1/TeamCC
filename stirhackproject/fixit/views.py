@@ -96,7 +96,7 @@ def user_logout(request):
 	return HttpResponseRedirect(reverse('login'))
 
 def index(request):
-    issue_list = Issue.objects.order_by('-upvotes')
+    issue_list = Issue.objects.order_by('id')
     context_dict = {'issues': issue_list}
     return render(request, 'fixit/index.html', context=context_dict)
 

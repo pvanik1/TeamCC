@@ -9,10 +9,10 @@
 	
 	{% if issues %}
 		{% for issue in issues %}
-		<h1>{{ Issues.title }}</h1>
-		<img src="{{ MEDIA_URL }}issue_images/{{ issues.image }}" />
-		<div>{{ issues.location_bgd }} - {{ issues.location_detail }}</div>
-		<div>Upspanners: {{ issues.upovotes }}</div>
+		<h1>{{ issue.title }}</h1>
+		<img src="{{ issue.image }}" />
+		<div>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
+		<div>Upspanners: {{ issue.upovotes }}</div>
 		{% endfor %}
 	{% else %}
 		There are no issues.
