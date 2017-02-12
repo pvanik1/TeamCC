@@ -8,7 +8,7 @@
 {% block body_block %}
      <h1>Report an Issue</h1>
         <div>
-            <form id="issue_form" method="post" action="addIssue">
+            <form id="issue_form" method="post" action="" enctype="multipart/form-data">
                 {% csrf_token %}
 
                 {{ issue_form.as_p}}
@@ -23,5 +23,9 @@
                 {% endfor %}
                 <input type="submit" name="submit" value="Submit Issue" />
             </form>
+        </div>
+
+        <div>
+        <a href="{% url 'index' %}">Go back to homepage</a>
         </div>
 {% endblock %}

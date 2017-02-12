@@ -16,6 +16,7 @@ class IssueForm(forms.ModelForm):
 	location_bdg = forms.CharField(max_length = 128, help_text = "In which building is the issue?", required = True)
 	location_detail = forms.CharField(max_length = 128, help_text = "Please provide details of the room or space.", required = True)
 	upvotes = forms.IntegerField(widget = forms.HiddenInput(), initial = 0)
+	images = forms.ImageField(required = False)
 	# TODO image upload
 	# TODO input different tags to store them in a 'tags' list of the Issue model
 	
