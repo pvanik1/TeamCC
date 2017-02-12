@@ -21,14 +21,10 @@
 
                 {% csrf_token %}
 
-                {{ issue_form.as_p}}
-                {{ form.issueID }}
-                {{ form.title }}
-                {{ form.description }}
-                {{ form.location_bdg }}
-                {{ form.location_detail }}
 
-                <!--{% for hidden in form.hidden_fields %}
+                {{ issue_form.as_p}}
+                
+                {% for hidden in form.hidden_fields %}
                     {{ hidden }}
                 {% endfor %}
                 {% for field in form.visible_fields %}
@@ -37,11 +33,7 @@
                     {{ field }}
                 {% endfor %}
 
-                Title: <input type="text" name="title" value="" size="50" /><br/>
-                Building: <input type="text" name="location_bdg" value="" size="50" /><br/>
-                Locaiton detail: <input type="text" name="lcation_detail" value="" size="50" /><br/>
-                Description: <input type="text" name="description" value="" size="127" /><br/>
-                -->
+                
                 Capture Image: <input type="file" name="images" accept="image/*" id="capture" capture="camera">
 
                 <input type="submit" name="submit" value="Submit Issue" />
