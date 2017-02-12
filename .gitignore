@@ -6,7 +6,7 @@ local_settings.py
 db.sqlite3
 media
 
-stirhackproject/static_files/
+stirhackproject/static_root/*
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
