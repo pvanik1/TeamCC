@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^index/', views.index, name='index'),
     url(r'^about/', views.about, name='about'),
     url(r'^register/', views.register, name='register'),
+    url(r'^addIssue/$', views.addIssue, name='addIssue'),
     url('', include('pwa.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

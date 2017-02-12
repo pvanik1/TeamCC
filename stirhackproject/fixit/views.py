@@ -103,6 +103,8 @@ def index(request):
 def about(request):
 	return render(request, 'fixit/about.html')
 
+def addIssue(request):
+    return render(request, 'fixit/addIssue.html')
 
 
 

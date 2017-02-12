@@ -6,13 +6,13 @@
 {% endblock %} 
 
 {% block body_block %}
-	
+	<a href="{% url 'addIssue' %}">Report an issue</a><br/>
 	{% if issues %}
 		{% for issue in issues %}
 		<h1>{{ issue.title }}</h1>
 		<img src="{{ issue.image }}" />
 		<div>{{ issue.location_bdg }} - {{ issue.location_detail }}</div>
-		<div>Upspanners: {{ issue.upovotes }}</div>
+		<div>Upspanners: {{ issue.upvotes }}</div>
 		{% endfor %}
 	{% else %}
 		There are no issues.
