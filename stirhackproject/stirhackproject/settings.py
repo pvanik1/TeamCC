@@ -122,13 +122,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-#<<<<<<< HEAD
 
 MEDIA_URL = '/media/'
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR, ]
 MEDIA_ROOT = MEDIA_DIR
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 
 # PWA config
@@ -141,4 +141,3 @@ PWA_APP_ICONS = [
         'sizes': '160x160'
     }
 ]
-#>>>>>>> 80fec0d5ee0f1dc435ea6072fcb3093c7b24965b
